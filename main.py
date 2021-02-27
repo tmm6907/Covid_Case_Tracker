@@ -27,4 +27,6 @@ def covidpg(index):
             log.write(f"Deaths: {deaths}")
             log.write(f"Probable Deaths: {probdeaths}")
 
+            print(f"File Saved {index}...")
+
         
