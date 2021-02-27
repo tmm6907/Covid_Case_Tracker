@@ -1,10 +1,11 @@
 #main.py
 from bs4 import BeautifulSoup
 import requests
+import time
 
 
 def covidpg():
-     #keeps track of log number
+    #keeps track of log number
 
     #Retrieve html file from webpage and initialize soup object on that file
     html_file = requests.get('https://www.wbaltv.com/article/covid-19-numbers-maryland-map-graphs-faq-february-22-28/35586153#').text
@@ -20,12 +21,11 @@ def covidpg():
             deaths = element.text.split()[3]
             probdeaths = element.text.split()[4]
             
-            log = open(f"log{index}.txt", "w") # not working for some reason
-            log.write(f"The statistics for {countyname} are: ")
-            log.write(f"Cases: {cases}")
-            log.write(f"Deaths: {deaths}")
-            log.write(f"Probable Deaths: {probdeaths}")
-
-            print(f"File Saved {index}...")
+            with open(f'logs/log.txt', 'w+') as log:
+                log.write(f'The statistics for {countyname} are: ')
+                log.write(f'Cases: {cases}')
+                log.write(f'Deaths: {deaths}')
+                log.write(f'Probable Deaths: {probdeaths}')
+        print(f"File Saved {time.localtime}...")
 
         
