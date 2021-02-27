@@ -14,7 +14,7 @@ def covidpg():
     region = soup.find('div', class_='article-content--body-text')
     elements = region.find_all('p')
     for index, element in enumerate(elements):
-        if 'Prince' in element.text:
+        if 'Prince' in element.text: #for now I can only do PG county until I discover more about how to isolate tags that lack a tag identifier
             countyname = (element.text.split()[0]) + (element.text.split()[1])
             cases = element.text.split()[2]
             deaths = element.text.split()[3]
