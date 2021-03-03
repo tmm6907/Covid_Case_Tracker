@@ -1,0 +1,96 @@
+The statistics for Allegany county are:
+Cases: 6,409
+Deaths: (198)
+Probable Deaths: 1*
+The statistics for Anne Arundel county are:
+Cases: 35,963
+Deaths: (528)
+Probable Deaths: 14*
+The statistics for Baltimore City county are:
+Cases: 40,540
+Deaths: (873)
+Probable Deaths: 21*
+The statistics for Baltimore County county are:
+Cases: 51,183
+Deaths: (1,254)
+Probable Deaths: 34*
+The statistics for Calvert county are:
+Cases: 3,668
+Deaths: (70)
+Probable Deaths: 1*
+The statistics for Caroline county are:
+Cases: 2,050
+Deaths: (20)
+Probable Deaths: 0*
+The statistics for Carroll county are:
+Cases: 7,569
+Deaths: (209)
+Probable Deaths: 5*
+The statistics for Cecil county are:
+Cases: 5,027
+Deaths: (119)
+Probable Deaths: 2*
+The statistics for Charles county are:
+Cases: 8,963
+Deaths: (157)
+Probable Deaths: 2*
+The statistics for Dorchester county are:
+Cases: 2,354
+Deaths: (44)
+Probable Deaths: 1*
+The statistics for Frederick county are:
+Cases: 17,035
+Deaths: (272)
+Probable Deaths: 9*
+The statistics for Garrett county are:
+Cases: 1,844
+Deaths: (60)
+Probable Deaths: 1*
+The statistics for Harford county are:
+Cases: 12,567
+Deaths: (235)
+Probable Deaths: 4*
+The statistics for Howard county are:
+Cases: 15,868
+Deaths: (214)
+Probable Deaths: 6*
+The statistics for Kent county are:
+Cases: 1,128
+Deaths: (41)
+Probable Deaths: 2*
+The statistics for Montgomery county are:
+Cases: 63,595
+Deaths: (1,375)
+Probable Deaths: 45*
+The statistics for Prince county are:
+Cases: George's
+Deaths: 73,685
+Probable Deaths: (1,305)
+The statistics for Queen county are:
+Cases: Anne's
+Deaths: 2,582
+Probable Deaths: (37)
+The statistics for St. county are:
+Cases: Mary's
+Deaths: 5,132
+Probable Deaths: (114)
+The statistics for Somerset county are:
+Cases: 2,393
+Deaths: (31)
+Probable Deaths: 0*
+The statistics for Talbot county are:
+Cases: 1,893
+Deaths: (34)
+Probable Deaths: 0*
+The statistics for Washington county are:
+Cases: 12,448
+Deaths: (252)
+Probable Deaths: 3*
+The statistics for Wicomico county are:
+Cases: 6,790
+Deaths: (142)
+Probable Deaths: 0*
+The statistics for Worcester county are:
+Cases: 3,270
+Deaths: (92)
+Probable Deaths: 1*
