@@ -4,7 +4,6 @@ import requests
 import time
 
 def covidpg(index):
-    #keeps track of log number
 
     #Retrieve html file from webpage and initialize soup object on that file
     html_file = requests.get('https://www.wbaltv.com/article/covid-19-numbers-maryland-map-graphs-faq-february-22-28/35586153#').text
@@ -14,7 +13,7 @@ def covidpg(index):
     region = soup.find('div', class_='article-content--body-text')
     start = region.find('p', string='Allegany  6,409       (198)        1*')
     
-    while('Data not available' not in start.text):
+    while('Data not available' not in start.text): #isolates list of counties from rest of document
         if start.text.split()[1].isalpha():
             countyname = (start.text.split()[0]) + ' ' + (start.text.split()[1])
             cases = start.text.split()[2]
@@ -26,7 +25,8 @@ def covidpg(index):
             deaths = start.text.split()[2]
             probdeaths = start.text.split()[3]
         
-        nl = '\n'
+        #logging data into a folder of files that increment every day
+        nl = '\n' #new line character
         logger = open(f'logs/log{index}.txt', 'a')
         logger.write(f'The statistics for {countyname} county are:{nl}')
         logger.write(f'Cases: {cases}{nl}')
@@ -34,6 +34,8 @@ def covidpg(index):
         logger.write(f'Probable Deaths: {probdeaths}{nl}')
         
         start = start.next_sibling
+
+#print timestamp
 localt = time.localtime()
 print(f"File Saved {localt}...")
 
