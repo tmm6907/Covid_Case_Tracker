@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
-def covidpg():
+def covidpg(index):
     #keeps track of log number
 
     #Retrieve html file from webpage and initialize soup object on that file
@@ -12,20 +12,29 @@ def covidpg():
 
     #Scrape page for county and print out results
     region = soup.find('div', class_='article-content--body-text')
-    elements = region.find_all('p')
-    for element in enumerate(elements):
-        if 'Prince' in element.text: #for now I can only do PG county until I discover more about how to isolate tags that lack a tag identifier
-            countyname = (element.text.split()[0]) + (element.text.split()[1])
-            cases = element.text.split()[2]
-            deaths = element.text.split()[3]
-            probdeaths = element.text.split()[4]
-            
-            with open(f'logs/log.txt', 'a') as log:
-                log.write(f'The statistics for {countyname} are: ')
-                log.write(f'Cases: {cases}')
-                log.write(f'Deaths: {deaths}')
-                log.write(f'Probable Deaths: {probdeaths}')
-            localt = time.localtime()
-            print(f"File Saved {localt}...")
+    start = region.find('p', string='Allegany  6,409       (198)        1*')
+    
+    while('Data not available' not in start.text):
+        if start.text.split()[1].isalpha():
+            countyname = (start.text.split()[0]) + ' ' + (start.text.split()[1])
+            cases = start.text.split()[2]
+            deaths = start.text.split()[3]
+            probdeaths = start.text.split()[-1]
+        else:
+            countyname = (start.text.split()[0])
+            cases = start.text.split()[1]
+            deaths = start.text.split()[2]
+            probdeaths = start.text.split()[3]
+        
+        nl = '\n'
+        logger = open(f'logs/log{index}.txt', 'a')
+        logger.write(f'The statistics for {countyname} county are:{nl}')
+        logger.write(f'Cases: {cases}{nl}')
+        logger.write(f'Deaths: {deaths}{nl}')
+        logger.write(f'Probable Deaths: {probdeaths}{nl}')
+        
+        start = start.next_sibling
+localt = time.localtime()
+print(f"File Saved {localt}...")
 
         
