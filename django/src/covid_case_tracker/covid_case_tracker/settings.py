@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     #third party apps
 
     #own apps
-    'county_tracker',
+    'county_trackers',
     'pages',
-    
+
 ]
 
 MIDDLEWARE = [

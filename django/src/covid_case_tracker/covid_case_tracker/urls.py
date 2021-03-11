@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from pages.views import home_view
-from county_tracker.views import county_detail_view
+from county_trackers.views import county_detail_view
 
 urlpatterns = [
     path('',home_view, name='home'),

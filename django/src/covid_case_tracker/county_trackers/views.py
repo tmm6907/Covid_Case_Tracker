@@ -8,4 +8,4 @@ def county_detail_view(request):
     context = {
         'object': obj
     }
-    return render(request, 'county_tracker/detail.html', context)
+    return render(request, 'county_trackers/detail.html', context)
