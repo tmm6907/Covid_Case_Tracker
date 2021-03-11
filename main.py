@@ -11,7 +11,7 @@ def covidpg(index):
 
     #Scrape page for county and print out results
     region = soup.find('div', class_='article-content--body-text')
-    start = region.find('p', string='Allegany  6,409       (198)        1*')
+    start = region.find('p', string='Allegany           6,418    (199)     1*')
     
     while('Data not available' not in start.text): #isolates list of counties from rest of document
         if start.text.split()[1].isalpha():
@@ -35,8 +35,8 @@ def covidpg(index):
         
         start = start.next_sibling
 
-#print timestamp
-localt = time.localtime()
-print(f"File Saved {localt}...")
+    #print timestamp
+    localt = time.localtime()
+    print(f"File Saved {localt}...")
 
         
