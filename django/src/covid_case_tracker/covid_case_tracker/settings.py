@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     #own apps
     'county_trackers',
     'pages',
+    'background_task',
+    'background_app',
 
 ]
 
@@ -82,8 +84,12 @@ WSGI_APPLICATION = 'covid_case_tracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'uejmwcbv',
+        'USER': 'uejmwcbv',
+        'PASSWORD': 'd8Gnod4MSe4vyY8I283yyJlKg7gwCnKZ',
+        'HOST': 'ziggy.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 

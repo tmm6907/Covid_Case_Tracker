@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
-{%block content%%}
+{% block content %}
 
-    <p>{{ object.title }}</p>
+    {% for object in objects%}
+        <p>{{ object.title }}</p>
 
-    <p>{{ object.cases }}</p>
+        <p>{{ object.cases }}</p>
 
-    <p>{{ object.deaths }}</p>
+        <p>{{ object.deaths }}</p>
 
-    <p>{{ object.prob_deaths }}</p>
+        <p>{{ object.prob_deaths }}</p>
+    {% endfor %}
 
 {% endblock %}

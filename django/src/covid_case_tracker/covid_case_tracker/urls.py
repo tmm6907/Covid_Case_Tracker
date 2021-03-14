@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
 
 from pages.views import home_view
-from county_trackers.views import county_detail_view
+from county_trackers.views import county_detail_view, tracker_create_view
+
 
 urlpatterns = [
     path('',home_view, name='home'),
     path('county/',county_detail_view),
+    path('create/',tracker_create_view),
+    path('', include('background_app.urls'), name = 'background'),
+
     path('admin/', admin.site.urls),
 ]

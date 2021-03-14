@@ -1,192 +1,240 @@
+Spilts: ['Allegany', '6,434', '(200)', '1*']
 The statistics for Allegany county are:
-Cases: 6,409
-Deaths: (198)
+Cases: 6,434
+Deaths: (200)
 Probable Deaths: 1*
+Spilts: ['Anne', 'Arundel', '36,870', '(538)', '14*']
 The statistics for Anne Arundel county are:
-Cases: 35,963
-Deaths: (528)
+Cases: 36,870
+Deaths: (538)
 Probable Deaths: 14*
+Spilts: ['Baltimore', 'City', '41,588', '(888)', '21*']
 The statistics for Baltimore City county are:
-Cases: 40,540
-Deaths: (873)
+Cases: 41,588
+Deaths: (888)
 Probable Deaths: 21*
+Spilts: ['Baltimore', 'County', '52,606', '(1,279)', '34*']
 The statistics for Baltimore County county are:
-Cases: 51,183
-Deaths: (1,254)
+Cases: 52,606
+Deaths: (1,279)
 Probable Deaths: 34*
+Spilts: ['Calvert', '3,747', '(72)', '1*']
 The statistics for Calvert county are:
-Cases: 3,668
-Deaths: (70)
+Cases: 3,747
+Deaths: (72)
 Probable Deaths: 1*
+Spilts: ['Caroline', '2,068', '(21)', '0*']
 The statistics for Caroline county are:
-Cases: 2,050
-Deaths: (20)
+Cases: 2,068
+Deaths: (21)
 Probable Deaths: 0*
+Spilts: ['Carroll', '7,802', '(212)', '5*']
 The statistics for Carroll county are:
-Cases: 7,569
-Deaths: (209)
+Cases: 7,802
+Deaths: (212)
 Probable Deaths: 5*
+Spilts: ['Cecil', '5,107', '(122)', '2*']
 The statistics for Cecil county are:
-Cases: 5,027
-Deaths: (119)
+Cases: 5,107
+Deaths: (122)
 Probable Deaths: 2*
+Spilts: ['Charles', '9,225', '(162)', '2*']
 The statistics for Charles county are:
-Cases: 8,963
-Deaths: (157)
+Cases: 9,225
+Deaths: (162)
 Probable Deaths: 2*
+Spilts: ['Dorchester', '2,394', '(44)', '1*']
 The statistics for Dorchester county are:
-Cases: 2,354
+Cases: 2,394
 Deaths: (44)
 Probable Deaths: 1*
+Spilts: ['Frederick', '17,407', '(278)', '9*']
 The statistics for Frederick county are:
-Cases: 17,035
-Deaths: (272)
+Cases: 17,407
+Deaths: (278)
 Probable Deaths: 9*
+Spilts: ['Garrett', '1,859', '(60)', '1*']
 The statistics for Garrett county are:
-Cases: 1,844
+Cases: 1,859
 Deaths: (60)
 Probable Deaths: 1*
+Spilts: ['Harford', '12,966', '(244)', '4*']
 The statistics for Harford county are:
-Cases: 12,567
-Deaths: (235)
+Cases: 12,966
+Deaths: (244)
 Probable Deaths: 4*
+Spilts: ['Howard', '16,459', '(214)', '6*']
 The statistics for Howard county are:
-Cases: 15,868
+Cases: 16,459
 Deaths: (214)
 Probable Deaths: 6*
+Spilts: ['Kent', '1,153', '(42)', '2*']
 The statistics for Kent county are:
-Cases: 1,128
-Deaths: (41)
+Cases: 1,153
+Deaths: (42)
 Probable Deaths: 2*
+Spilts: ['Montgomery', '64,647', '(1,394)', '45*']
 The statistics for Montgomery county are:
-Cases: 63,595
-Deaths: (1,375)
+Cases: 64,647
+Deaths: (1,394)
 Probable Deaths: 45*
+Spilts: ['Prince', "George's", '75,180', '(1,323)', '29*']
 The statistics for Prince county are:
 Cases: George's
-Deaths: 73,685
-Probable Deaths: (1,305)
+Deaths: 75,180
+Probable Deaths: (1,323)
+Spilts: ['Queen', "Anne's", '2,621', '(39)', '1*']
 The statistics for Queen county are:
 Cases: Anne's
-Deaths: 2,582
-Probable Deaths: (37)
+Deaths: 2,621
+Probable Deaths: (39)
+Spilts: ['St.', "Mary's", '5,255', '(117)', '0*']
 The statistics for St. county are:
 Cases: Mary's
-Deaths: 5,132
-Probable Deaths: (114)
+Deaths: 5,255
+Probable Deaths: (117)
+Spilts: ['Somerset', '2,421', '(34)', '0*']
 The statistics for Somerset county are:
-Cases: 2,393
-Deaths: (31)
-Probable Deaths: 0*
-The statistics for Talbot county are:
-Cases: 1,893
+Cases: 2,421
 Deaths: (34)
 Probable Deaths: 0*
+Spilts: ['Talbot', '1,914', '(35)', '0*']
+The statistics for Talbot county are:
+Cases: 1,914
+Deaths: (35)
+Probable Deaths: 0*
+Spilts: ['Washington', '12,649', '(256)', '3*']
 The statistics for Washington county are:
-Cases: 12,448
-Deaths: (252)
+Cases: 12,649
+Deaths: (256)
 Probable Deaths: 3*
+Spilts: ['Wicomico', '6,908', '(146)', '0*']
 The statistics for Wicomico county are:
-Cases: 6,790
-Deaths: (142)
+Cases: 6,908
+Deaths: (146)
 Probable Deaths: 0*
+Spilts: ['Worcester', '3,301', '(91)', '1*']
 The statistics for Worcester county are:
-Cases: 3,270
-Deaths: (92)
+Cases: 3,301
+Deaths: (91)
 Probable Deaths: 1*
+Spilts: ['Allegany', '6,434', '(200)', '1*']
 The statistics for Allegany county are:
-Cases: 6,418
-Deaths: (199)
+Cases: 6,434
+Deaths: (200)
 Probable Deaths: 1*
+Spilts: ['Anne', 'Arundel', '36,870', '(538)', '14*']
 The statistics for Anne Arundel county are:
-Cases: 36,241
-Deaths: (531)
+Cases: 36,870
+Deaths: (538)
 Probable Deaths: 14*
+Spilts: ['Baltimore', 'City', '41,588', '(888)', '21*']
 The statistics for Baltimore City county are:
-Cases: 40,817
-Deaths: (878)
+Cases: 41,588
+Deaths: (888)
 Probable Deaths: 21*
+Spilts: ['Baltimore', 'County', '52,606', '(1,279)', '34*']
 The statistics for Baltimore County county are:
-Cases: 51,639
-Deaths: (1,258)
+Cases: 52,606
+Deaths: (1,279)
 Probable Deaths: 34*
+Spilts: ['Calvert', '3,747', '(72)', '1*']
 The statistics for Calvert county are:
-Cases: 3,691
-Deaths: (71)
+Cases: 3,747
+Deaths: (72)
 Probable Deaths: 1*
+Spilts: ['Caroline', '2,068', '(21)', '0*']
 The statistics for Caroline county are:
-Cases: 2,057
-Deaths: (20)
+Cases: 2,068
+Deaths: (21)
 Probable Deaths: 0*
+Spilts: ['Carroll', '7,802', '(212)', '5*']
 The statistics for Carroll county are:
-Cases: 7,637
-Deaths: (209)
+Cases: 7,802
+Deaths: (212)
 Probable Deaths: 5*
+Spilts: ['Cecil', '5,107', '(122)', '2*']
 The statistics for Cecil county are:
-Cases: 5,053
-Deaths: (121)
+Cases: 5,107
+Deaths: (122)
 Probable Deaths: 2*
+Spilts: ['Charles', '9,225', '(162)', '2*']
 The statistics for Charles county are:
-Cases: 9,057
-Deaths: (158)
+Cases: 9,225
+Deaths: (162)
 Probable Deaths: 2*
+Spilts: ['Dorchester', '2,394', '(44)', '1*']
 The statistics for Dorchester county are:
-Cases: 2,369
+Cases: 2,394
 Deaths: (44)
 Probable Deaths: 1*
+Spilts: ['Frederick', '17,407', '(278)', '9*']
 The statistics for Frederick county are:
-Cases: 17,166
-Deaths: (272)
+Cases: 17,407
+Deaths: (278)
 Probable Deaths: 9*
+Spilts: ['Garrett', '1,859', '(60)', '1*']
 The statistics for Garrett county are:
-Cases: 1,846
+Cases: 1,859
 Deaths: (60)
 Probable Deaths: 1*
+Spilts: ['Harford', '12,966', '(244)', '4*']
 The statistics for Harford county are:
-Cases: 12,679
-Deaths: (236)
+Cases: 12,966
+Deaths: (244)
 Probable Deaths: 4*
+Spilts: ['Howard', '16,459', '(214)', '6*']
 The statistics for Howard county are:
-Cases: 16,057
+Cases: 16,459
 Deaths: (214)
 Probable Deaths: 6*
+Spilts: ['Kent', '1,153', '(42)', '2*']
 The statistics for Kent county are:
-Cases: 1,135
-Deaths: (41)
+Cases: 1,153
+Deaths: (42)
 Probable Deaths: 2*
+Spilts: ['Montgomery', '64,647', '(1,394)', '45*']
 The statistics for Montgomery county are:
-Cases: 63,898
-Deaths: (1,381)
+Cases: 64,647
+Deaths: (1,394)
 Probable Deaths: 45*
+Spilts: ['Prince', "George's", '75,180', '(1,323)', '29*']
 The statistics for Prince county are:
 Cases: George's
-Deaths: 74,165
-Probable Deaths: (1,310)
+Deaths: 75,180
+Probable Deaths: (1,323)
+Spilts: ['Queen', "Anne's", '2,621', '(39)', '1*']
 The statistics for Queen county are:
 Cases: Anne's
-Deaths: 2,597
-Probable Deaths: (37)
+Deaths: 2,621
+Probable Deaths: (39)
+Spilts: ['St.', "Mary's", '5,255', '(117)', '0*']
 The statistics for St. county are:
 Cases: Mary's
-Deaths: 5,186
-Probable Deaths: (115)
+Deaths: 5,255
+Probable Deaths: (117)
+Spilts: ['Somerset', '2,421', '(34)', '0*']
 The statistics for Somerset county are:
-Cases: 2,401
-Deaths: (32)
-Probable Deaths: 0*
-The statistics for Talbot county are:
-Cases: 1,906
+Cases: 2,421
 Deaths: (34)
 Probable Deaths: 0*
-The statistics for Washington county are:
-Cases: 12,500
-Deaths: (254)
-Probable Deaths: 3*
-The statistics for Wicomico county are:
-Cases: 6,816
-Deaths: (143)
+Spilts: ['Talbot', '1,914', '(35)', '0*']
+The statistics for Talbot county are:
+Cases: 1,914
+Deaths: (35)
 Probable Deaths: 0*
+Spilts: ['Washington', '12,649', '(256)', '3*']
+The statistics for Washington county are:
+Cases: 12,649
+Deaths: (256)
+Probable Deaths: 3*
+Spilts: ['Wicomico', '6,908', '(146)', '0*']
+The statistics for Wicomico county are:
+Cases: 6,908
+Deaths: (146)
+Probable Deaths: 0*
+Spilts: ['Worcester', '3,301', '(91)', '1*']
 The statistics for Worcester county are:
-Cases: 3,279
+Cases: 3,301
 Deaths: (91)
 Probable Deaths: 1*
