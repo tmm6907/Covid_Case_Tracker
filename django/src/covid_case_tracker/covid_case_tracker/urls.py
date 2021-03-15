@@ -14,18 +14,25 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
 from django.urls import path
 from django.urls import include
 
 from pages.views import home_view
 from county_trackers.views import county_detail_view, tracker_create_view
 
+import debug_toolbar
+
 
 urlpatterns = [
     path('',home_view, name='home'),
     path('county/',county_detail_view),
     path('create/',tracker_create_view),
-    path('', include('background_app.urls'), name = 'background'),
+    path('county/', include('background_app.urls'), name = 'background'),
 
+    path('__debug__/', include(debug_toolbar.urls)),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += path('__debug__/', include(debug_toolbar.urls)),

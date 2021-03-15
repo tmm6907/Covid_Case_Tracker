@@ -8,7 +8,7 @@ import time
 import re
 
 @background
-def covidpg(index):
+def covidpg():
 
     def starter_tag(string):
         return string and re.compile('Allegany').search(string)
@@ -28,6 +28,7 @@ def covidpg(index):
     while(end_tag(start.string)): #isolates list of counties from rest of document
         string = start.string
         string = re.split('\w+', string)
+        print(string)
         if re.match('[A-Z]', string[1]):
             countyname = (string[0]) + ' ' + (start[1])
             cases = start[2]
@@ -39,7 +40,8 @@ def covidpg(index):
             deaths = start[2]
             probdeaths = start[3]
         
-        Tracker(countyname, cases, deaths, probdeaths)
+        tracker = Tracker.objects.create_tracker(countyname, cases, deaths, probdeaths)
+        tracker.save()
 
 
         #logging data into a folder of files that increment every day

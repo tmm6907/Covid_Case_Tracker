@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'pages',
     'background_task',
     'background_app',
+    'debug_toolbar',
 
 ]
 
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'covid_case_tracker.urls'
@@ -131,3 +133,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# User Created
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

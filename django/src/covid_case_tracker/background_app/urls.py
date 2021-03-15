@@ -20,5 +20,5 @@ from .views import background_view
 
 
 urlpatterns = [
-    path('', background_view, name = 'background_view'),
+    path('county/', background_view, name = 'background_view'),
 ]
