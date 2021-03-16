@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'county_trackers',
     'pages',
     'background_task',
-    'background_app',
     'debug_toolbar',
 
 ]

@@ -1,15 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-    {% for object in objects%}
-        <p>{{ object.title }}</p>
-
-        <p>{{ object.cases }}</p>
-
-        <p>{{ object.deaths }}</p>
-
-        <p>{{ object.prob_deaths }}</p>
-    {% endfor %}
+    <div class ="row">
+        <div class ="col">
+            {% for object in objects%}
+                <div class ="row">
+                    <div class ="col ">
+                        <span class = "tracker" id = "title">{{ object.title }}:</span>
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class ="col" >Cases</div>
+                    <div class ="col" >Deaths</div>
+                    <div class ="col" >Probable Deaths</div>
+                </div>
+                <div class ="row">
+                    <div class ="col" >
+                        <span class = "tracker" >{{ object.cases }}</span>
+                    </div>
+                    <div class ="col">
+                            <span class = "tracker">{{ object.deaths }}</span>
+                    </div>
+                    <div class ="col">
+                        <span class = "tracker" id = "prob">{{ object.prob_deaths }}</span>
+                    </div
+                </div>
+                <div class="w-100"></div>
+            {% endfor %}
+        </div>
+    </div>
 
 {% endblock %}
