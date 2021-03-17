@@ -1,33 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class ="row">
-        <div class ="col">
-            {% for object in objects%}
-                <div class ="row">
-                    <div class ="col ">
-                        <span class = "tracker" id = "title">{{ object.title }}:</span>
-                    </div>
+    {% for object in objects%}
+        <div class="card" style="width: 48rem;">
+            <div id = "row justify-content-center">
+                <div class = "col-6 h3">
+                    <span class = "tracker" id = "title">{{ object.title }}</span>
                 </div>
-                <div class ="row">
-                    <div class ="col" >Cases</div>
-                    <div class ="col" >Deaths</div>
-                    <div class ="col" >Probable Deaths</div>
+            </div>
+            <div class = "row justify-content-center">
+                <div class = "tracker_details col-4 h6" >Cases</div>
+                <div class = "tracker_details col-4 h6" >Deaths</div>
+                <div class = "tracker_details col-4 h6" >Probable Deaths</div>
+            </div>
+            <div class ="row justify-content-center">
+                <div class ="col-4 h6" >
+                    <span class = "tracker" id = "cases" >{{ object.cases }}</span>
                 </div>
-                <div class ="row">
-                    <div class ="col" >
-                        <span class = "tracker" >{{ object.cases }}</span>
-                    </div>
-                    <div class ="col">
-                            <span class = "tracker">{{ object.deaths }}</span>
-                    </div>
-                    <div class ="col">
-                        <span class = "tracker" id = "prob">{{ object.prob_deaths }}</span>
-                    </div
+                <div class ="col-4 h6">
+                    <span class = "tracker" id = "deaths">{{ object.deaths }}</span>
                 </div>
-                <div class="w-100"></div>
-            {% endfor %}
+                <div class ="col-4 h6">
+                    <span class = "tracker" id = "prob">{{ object.prob_deaths }}</span>
+                </div>
+            </div>
         </div>
-    </div>
+            <div class="w-100"></div>
+    {% endfor %}
+    
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
 {% endblock %}
