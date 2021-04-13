@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from background_task import background
 
 
-from county_trackers import models
+from .models import Tracker
 
 import requests
 import time
@@ -50,7 +50,7 @@ def covidpg():
             deaths = string[2]
             probdeaths = string[3]
         
-        tracker = models.Tracker.objects.create(title = countyname,cases = cases, deaths = deaths, prob_deaths = probdeaths)
+        tracker = Tracker(title = countyname,cases = cases, deaths = deaths, prob_deaths = probdeaths)
         tracker.save()
         
         #logging data into a folder of files that increment every day
