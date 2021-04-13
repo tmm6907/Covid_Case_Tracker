@@ -1,14 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import TrackerForm
 from .models import Tracker
 from .tasks import covidpg
 
 # Create your views here.
 def county_detail_view(request):
-    objs = Tracker.objects.all
+    qs = Tracker.objects.all
     context = {
-        'objects': objs
+        'objects': qs
     }  
     return render(request, 'county_trackers/county_detail.html', context)
 

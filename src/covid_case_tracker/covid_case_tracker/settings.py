@@ -83,12 +83,8 @@ WSGI_APPLICATION = 'covid_case_tracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'uejmwcbv',
-        'USER': 'uejmwcbv',
-        'PASSWORD': 'd8Gnod4MSe4vyY8I283yyJlKg7gwCnKZ',
-        'HOST': 'ziggy.db.elephantsql.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -135,3 +131,5 @@ STATIC_URL = '/static/'
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
