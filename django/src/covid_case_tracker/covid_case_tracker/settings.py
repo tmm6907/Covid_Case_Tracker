@@ -42,10 +42,8 @@ INSTALLED_APPS = [
 
     #own apps
     'county_trackers',
-    'pages',
     'background_task',
     'debug_toolbar',
-
 ]
 
 MIDDLEWARE = [

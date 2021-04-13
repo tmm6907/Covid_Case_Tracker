@@ -1,26 +1,6 @@
-@charset "utf-8";
-
-.body{
-    background-color: $white;
-}
-
-.div.container.justify-content-center{
-    padding: 5rem;
+#head_div{
+    background: url('md_flag.png');
+};
+h1{
     text-align: center;
-    background-image: url("county_trackers/md_flag.png") ;
 }
-
-.div.col-6.h3{
-    background-color: $red-100;
-}
-
-.div.tracker_details.col-4.h6{
-    color: $black;
-    background-color: $light;    
-}
-
-.div.col-4.h6{
-    color: $black;
-    background-color: $light;    
-}
-

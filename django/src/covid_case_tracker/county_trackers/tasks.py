@@ -1,9 +1,6 @@
-#main.py
 from django.shortcuts import render
-from django.http import JsonResponse
 from bs4 import BeautifulSoup
 from background_task import background
-
 
 from .models import Tracker
 
@@ -32,7 +29,6 @@ def covidpg():
     while(end_tag(start.string)): #isolates list of counties from rest of document
         string = start.string
         string = re.split("[ *()']+",string)
-        #print(string)
         if re.match('[A-Z]', string[1]):
             if re.match('s', string[2]):
                 countyname = string[0] + ' ' + string[1] + "'" + string[2]
@@ -52,20 +48,8 @@ def covidpg():
         
         tracker = Tracker(title = countyname,cases = cases, deaths = deaths, prob_deaths = probdeaths)
         tracker.save()
-        
-        #logging data into a folder of files that increment every day
-        #nl = '\n' #new line character
-        #logger = open(f'logs/log{index}.txt', 'a')
-        #logger.write(f'Spilts: {temp_print}{nl}')
-        #logger.write(f'The statistics for {countyname} county are:{nl}')
-        #logger.write(f'Cases: {cases}{nl}')
-        #logger.write(f'Deaths: {deaths}{nl}')
-        #logger.write(f'Probable Deaths: {probdeaths}{nl}')
-        #logger.close()
-        
         start = start.next_sibling
 
     #print timestamp
     localt = time.localtime()
     print(f"Function Executed {localt}...")
-
